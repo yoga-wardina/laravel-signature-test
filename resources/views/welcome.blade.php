@@ -8,6 +8,7 @@
 </head>
 <style>
     body{
+        font-family: "Times New Roman", Times, serif; 
         margin: 0px;
         width: 100%;
         height: 100%;
@@ -15,8 +16,8 @@
     }
     .container{
         padding: 20px;
-        width: 700px;
-        height: 900px;
+        width: 210mm;
+        height: 297mm;
         border: 1px dashed black
     }
     .grid{
@@ -81,21 +82,29 @@
     hr{
         border-bottom: 2px solid black;
     }
+    .justify-between{
+        justify-content: space-between;
+    }
+    .w-text{
+        width: 300px;
+    }
+    .w-right{
+        width: 150px;
+    }
 </style>
 <body >
     <div class="container text-normal">
         <div class="mb-5 w-full flex justify-center">
-            <img width="200px" src="/assets/logo.png" alt="">
+            <img width="200px" src="{{ asset('https://ebelanja.id/images/logo.png') }}" alt="">
         </div> 
         <hr class="mb-10">
         Selamat bergabung di aplikasi ebelanja.
-        <div class="grid mb-5">
-        <b>ID akun</b>      <span class="text-left">: 53099205</span>
-        <b>Nama</b>         <span class="text-left">: powerbank</span>
-        <b>No. Akun</b>     <span class="text-left">: 085155169968</span>
-        <b>No. owner</b>    <span class="text-left">: 081344544799</span>
-        <b>Nama Sels</b>    <span class="text-left">: Adri sj</span>
-        </div>
+        <p class="flex justify-between w-text"><b>ID akun</b><span class="text-left w-right block">: 53099205</span></p>
+        <p class="flex justify-between w-text"><b>Nama</b><span class="text-left w-right block">: powerbank</span></p>
+        <p class="flex justify-between w-text"><b>No. Akun</b><span class="text-left w-right block">: 085155169968</span></p>
+        <p class="flex justify-between w-text"><b>No. owner</b><span class="text-left w-right block">: 081344544799</span></p>
+        <p class="flex justify-between w-text"><b>Nama Sels</b>    <span class="text-left w-right block">: Adri sj</span></p>
+
         <span class="mb-5 block">Limit saldo akan dirubah dari : <b>Rp 27.086.600</b> Jadi : <b>Rp 27.086.600</b></span>
         <span class="mb-5 block">
             Hal Hal yang perlu di perhatikan <br>
@@ -109,7 +118,7 @@
         <div class="flex w-full justify-end">
             <div class="signarea flex items-center flex-col">
                 <p>{{ date('F j, Y') }}</p>
-                <img src="/assets/sign.png" width="200px" alt="">
+                <img src="{{ asset($) }}" width="200px" alt="">
                 <hr width="80%" >
                 <p> powerbank </p>
             </div>

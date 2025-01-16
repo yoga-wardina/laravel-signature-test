@@ -8,6 +8,7 @@
 </head>
 <style>
     body{
+        font-family: "Times New Roman", Times, serif; 
         margin: 0px;
         width: 100%;
         height: 100%;
@@ -15,8 +16,8 @@
     }
     .container{
         padding: 20px;
-        width: 700px;
-        height: 900px;
+        width: 100%;
+        height: 100%;
         border: 1px dashed black
     }
     .grid{
@@ -85,7 +86,7 @@
 <body >
     <div class="container text-normal">
         <div class="mb-5 w-full flex justify-center">
-            <img width="200px" src="/assets/logo.png" alt="">
+            <img width="200px" src="https://ebelanja.id/images/logo.png" alt="">
         </div> 
         <hr class="mb-10">
         Selamat bergabung di aplikasi ebelanja.
